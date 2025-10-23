@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agregar Noticia</title>
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/newsadd.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <h1>Portal de Noticias</h1>
+    <%- include('./common/navbar') %>
+  </header>
+  <main class="form-container">
+    <div class="form-card">
+      <h2 class="form-title">Agregar Nueva Noticia</h2>
+      <form action="/news/add" method="post" class="news-form">
+        <label for="title">Título</label>
+        <input type="text" id="title" name="title" required>
+
+        <label for="summary">Resumen</label>
+        <input type="text" id="summary" name="summary" required>
+
+        <label for="content">Contenido</label>
+        <textarea id="content" name="content" rows="6" required></textarea>
+
+        <label for="image">URL de Imagen</label>
+        <input type="url" id="image" name="image">
+
+        <label for="date">Fecha</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit" class="submit-btn">Guardar</button>
+      </form>
+    </div>
+  </main>
+
+</body>
+
+</html>

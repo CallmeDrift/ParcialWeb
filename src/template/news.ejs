@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noticias</title>
+  <link rel="stylesheet" href="/css/news.css" />
+  <link rel="stylesheet" href="/css/navbar.css">
+</head>
+
+<body>
+    <header class="navbar">
+      <h1>Portal de Noticias</h1>
+      <%- include('./common/navbar') %>
+    </header>
+
+    <main class="news-container">
+      <% news.forEach(item=> { %>
+        <article class="news-card">
+          <h2 class="news-title">
+            <a href="/news/<%= item.id %>" style="text-decoration:none; color:inherit;">
+              <%= item.title %>
+            </a>
+          </h2>
+          <p class="news-summary">
+            <%= item.summary %>
+          </p>
+          <small class="news-date">
+            <%= item.date %>
+          </small>
+        </article>
+        <% }) %>
+    </main>
+</body>
+
+</html>

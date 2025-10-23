@@ -1,0 +1,109 @@
+/* ================================
+   ESTILOS PARA LA PÁGINA 404
+=================================== */
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  color: #333;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1100px;
+}
+
+h1.display-1 {
+  font-size: 6rem;
+  font-weight: 800;
+  color: #6c757d;
+  animation: fadeIn 1s ease-in-out;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #6c757d;
+  line-height: 1.6;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.btn-secondary {
+  background-color: #6c63ff;
+  border: none;
+  color: #fff;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  box-shadow: 0 4px 10px rgba(108, 99, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #5848d6;
+  box-shadow: 0 6px 15px rgba(88, 72, 214, 0.4);
+  transform: translateY(-2px);
+}
+
+lottie-player {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ================================
+   ANIMACIONES
+=================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ================================
+   RESPONSIVE
+=================================== */
+
+@media (max-width: 768px) {
+  h1.display-1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .btn-secondary {
+    padding: 0.7rem 1.8rem;
+  }
+
+  lottie-player {
+    max-width: 300px;
+  }
+}

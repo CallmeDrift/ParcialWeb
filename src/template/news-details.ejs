@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    <%= news.title %>
+  </title>
+  <link rel="stylesheet" href="/css/newsdetail.css">
+  <link rel="stylesheet" href="/css/navbar.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <h1>Portal de Noticias</h1>
+    <%- include('./common/navbar') %>
+  </header>
+
+  <main class="news-container">
+    <article class="news-card">
+
+      <% if (news.image) { %>
+        <div class="news-image-container">
+          <img src="<%= news.image %>" alt="<%= news.title %>" class="news-image">
+        </div>
+        <% } %>
+
+          <h2 class="news-title">
+            <%= news.title %>
+          </h2>
+
+          <p class="news-summary">
+            <%= news.summary %>
+          </p>
+
+          <p class="news-content">
+            <%= news.content %>
+          </p>
+
+          <div class="news-meta">
+            <small class="news-date">Fecha de escritura: <%= news.date %></small>
+          </div>
+
+          <div class="back-button">
+            <a href="/news" class="back-link">← Volver a la lista</a>
+          </div>
+
+    </article>
+  </main>
+</body>
+
+</html>
