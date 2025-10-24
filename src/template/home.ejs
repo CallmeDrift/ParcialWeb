@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio - Portal de Noticias</title>
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <h1>Portal de Noticias</h1>
+    <%- include('./common/navbar') %>
+  </header>
+
+  <main class="home-container">
+    <h2 class="section-title">Últimas noticias</h2>
+    <div class="news-grid">
+      <% latestNews.forEach(item=> { %>
+        <div class="news-card">
+          <div class="image-container">
+            <img src="<%= item.image %>" alt="<%= item.title %>" class="news-image">
+          </div>
+          <h3 class="news-title">
+            <%= item.title %>
+          </h3>
+          <p class="news-summary">
+            <%= item.summary %>
+          </p>
+          <a href="/news/<%= item.id %>" class="read-more">Leer más →</a>
+        </div>
+        <% }) %>
+    </div>
+  </main>
+</body>
+
+</html>

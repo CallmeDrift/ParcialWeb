@@ -20,10 +20,6 @@ export default class NewsRouter {
       this.view.renderAll(res, newsList)
     })
 
-    this.router.get('/add', (_req: Request, res: Response) => {
-      this.view.renderAddForm(res)
-    })
-
 
     this.router.get('/:id', (req: Request, res: Response) => {
       const id = Number(req.params['id'])

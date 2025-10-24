@@ -15,11 +15,35 @@
     "image": "/assets/driftmiku.png",
     "date": "2025-10-21"
   },
-    {
+  {
     "id": 3,
     "title": "Grupo Rook",
     "summary": "Grupo encargado de subastas y torneo",
     "content": "El grupo Rook era el encargado del modulo de subastas y torneo para el juego NEXUS BATTLE IV, al integrante luis fuentes lo llaman noe por cargar con ese poco de burros.",
+    "image": "/assets/driftmiku.png",
+    "date": "2025-10-21"
+  },
+  {
+    "id": 4,
+    "title": "Grupo Kryze",
+    "summary": "Grupo encargado de juegos y misiones",
+    "content": "El grupo Kryze era el encargado del modulo de juegos y misiones para el juego NEXUS BATTLE IV, al integrante luis fuentes lo llaman noe por cargar con ese poco de burros.",
+    "image": "/assets/mikeu.jpg",
+    "date": "2025-10-21"
+  },
+  {
+    "id": 5,
+    "title": "Grupo Wren",
+    "summary": "Grupo encargado de la IA",
+    "content": "El grupo Wren era el encargado del modulo de la IA para el juego NEXUS BATTLE IV, al integrante luis fuentes lo llaman noe por cargar con ese poco de burros.",
+    "image": "/assets/megumin.jpg",
+    "date": "2025-10-21"
+  },
+  {
+    "id": 6,
+    "title": "PI1 grupo 1",
+    "summary": "Grupo encargado de subastas y torneo",
+    "content": "El grupo PI1 grupo 1 era el encargado del modulo de subastas y torneo para el juego NEXUS BATTLE IV, al integrante luis fuentes lo llaman noe por cargar con ese poco de burros.",
     "image": "/assets/driftmiku.png",
     "date": "2025-10-21"
   }

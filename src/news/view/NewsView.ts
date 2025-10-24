@@ -10,7 +10,4 @@ export default class NewsView {
     res.render('news-details', { news })
   }
 
-  renderAddForm(res: Response): void {
-    res.render('addnews')
-  }
 }

@@ -4,13 +4,19 @@ import NewsRouter from './news/router/NewsRouter'
 import NewsView from './news/view/NewsView'
 import ErrorRouter from './error/router/ErrorRouter'
 import ErrorView from './error/view/ErrorView'
+import RegisterRouter from './register/router/RegisterRouter'
+import RegisterView from './register/view/RegisterView'
+import HomeRouter from './home/router/HomeRouter'
+import HomeView from './home/view/HomeView'
 
 export default class Server {
   private readonly app: Application
 
   constructor(
     private readonly newsRouter: NewsRouter,
-    private readonly errorRouter: ErrorRouter
+    private readonly errorRouter: ErrorRouter,
+    private readonly registerRouter: RegisterRouter,
+    private readonly homeRouter: HomeRouter
   ) {
     this.app = express()
     this.configure()
@@ -26,8 +32,11 @@ export default class Server {
   }
 
   private readonly routes = (): void => {
+    this.app.use('/', this.homeRouter.router)
     this.app.use('/news', this.newsRouter.router)
+    this.app.use('/add', this.registerRouter.router)
     this.app.use('/{*any}', this.errorRouter.router)
+    
   }
 
   private readonly static = (): void => {
@@ -46,6 +55,8 @@ export default class Server {
 
 const server = new Server(
   new NewsRouter(new NewsView()),
-  new ErrorRouter(new ErrorView())
+  new ErrorRouter(new ErrorView()),
+  new RegisterRouter(new RegisterView()),
+  new HomeRouter(new HomeView())
 )
 server.start()
