@@ -18,4 +18,11 @@ export default class NewsModel {
     const newsList = this.getAllNews()
     return newsList.find(news => news.id === id)
   }
+
+  searchNews(query: string): News[] {
+    const allNews = this.getAllNews();
+    return allNews.filter(news =>
+      news.title.toLowerCase().includes(query.toLowerCase())
+    );
+  }
 }

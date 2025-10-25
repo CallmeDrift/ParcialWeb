@@ -11,8 +11,32 @@
 <body>
   <header class="navbar">
     <h1>Portal de Noticias</h1>
-    <%- include('./common/navbar') %>
+    <nav class="nav-content">
+      <ul class="nav-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/news">Noticias</a></li>
+        <li><a href="/add">Publicar</a></li>
+      </ul>
+
+      <form action="/news/search" method="GET" class="search-form">
+        <input type="text" name="query" placeholder="Buscar noticia" required />
+        <button type="submit">Buscar</button>
+      </form>
+    </nav>
   </header>
+
+  <section class="video">
+    <video autoplay loop muted playsinline class="videiño">
+      <source src="/assets/Secuencia01.mp4" type="video/mp4">
+      Tu navegador no soporta videos.
+    </video>
+    <div class="video-overlay">
+      <h2>Bienvenido al Portal de Noticias</h2>
+      <p>Explora lo más reciente del mundo</p>
+      <a href="/news" class="hero-btn">Ver Noticias</a>
+    </div>
+  </section>
+
 
   <main class="home-container">
     <h2 class="section-title">Últimas noticias</h2>
@@ -33,6 +57,10 @@
         <% }) %>
     </div>
   </main>
+
+  <footer>
+    <%- include('./common/footer') %>
+  </footer>
 </body>
 
 </html>

@@ -1,14 +1,29 @@
-
-body {
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  background-color: #f8f9fa;
-  margin: 0;
-  padding: 0;
-  color: #212529;
+/* === VARIABLES === */
+:root {
+  --primary: #123F8A;
+  --primary-light: #387BB7;
+  --secondary: #63D5E6;
+  --secondary-dark: #3B9DCC;
+  --background-light: #A7C4DA;
+  --background-lighter: #E3F4FA;
+  --accent: #F6A8DC;
+  --text-dark: #123F8A;
+  --text-medium: #387BB7;
+  --text-light: #FFFFFF;
 }
 
+/* === GENERAL === */
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: linear-gradient(to bottom, var(--background-light) 70%, var(--accent));
+  margin: 0;
+  padding: 0;
+  color: var(--text-dark);
+}
+
+/* === NAVBAR (SIN CAMBIOS ESTRUCTURALES, SOLO OPTIMIZAR COLOR SI QUIERES LUEGO) === */
 .navbar {
-  background-color: #2c3e50;
+  background-color: #2c3e50; /* Puedes cambiar este luego por var(--primary) si deseas unificar */
   padding: 1rem;
   text-align: center;
 }
@@ -16,7 +31,7 @@ body {
 .navbar h1 {
   margin: 0;
   font-size: 1.8rem;
-  color: #ffffff;
+  color: var(--text-light);
 }
 
 .navbar .home-link {
@@ -30,81 +45,99 @@ body {
 }
 
 
+/* === CONTAINER === */
 .news-container {
   display: flex;
   justify-content: center;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1rem;
 }
 
-
+/* === CARD === */
 .news-card {
-  background-color: #ffffff;
+  background-color: var(--text-light);
   max-width: 800px;
   width: 100%;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--background-light);
+  box-shadow: 0 4px 12px rgba(56, 123, 183, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s;
 }
 
+.news-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-light);
+  box-shadow: 0 8px 16px rgba(18, 63, 138, 0.2);
+}
 
+/* === IMAGE === */
 .news-image-container {
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
 .news-image {
-  width: 50%;
+  width: 60%;
   max-width: 100%;
   border-radius: 10px;
   object-fit: cover;
+  border: 2px solid var(--background-light);
 }
 
-
+/* === TITLE === */
 .news-title {
   font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: 600;
-  color: #2c3e50;
+  color: var(--primary);
+  transition: color 0.25s ease;
 }
 
+.news-card:hover .news-title {
+  color: var(--primary-light);
+}
 
+/* === SUMMARY === */
 .news-summary {
   font-size: 1.2rem;
   font-weight: 400;
-  color: #495057;
-  margin-bottom: 1.5rem;
+  color: var(--text-medium);
+  margin-bottom: 1.2rem;
 }
 
-
+/* === CONTENT === */
 .news-content {
   font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: 1.5rem;
-  color: #343a40;
+  color: var(--text-dark);
 }
 
+/* === META (fecha, autor) === */
 .news-meta {
   margin-bottom: 1.5rem;
-  color: #6c757d;
+  color: var(--secondary-dark);
   font-size: 0.9rem;
+  font-weight: 500;
 }
 
-
+/* === BACK BUTTON === */
 .back-button {
   text-align: left;
 }
 
 .back-link {
   text-decoration: none;
-  background-color: #2c3e50;
-  color: #ffffff;
+  background-color: var(--primary);
+  color: var(--text-light);
   padding: 0.6rem 1rem;
   border-radius: 8px;
   font-size: 0.95rem;
   transition: background-color 0.3s ease-in-out, transform 0.2s;
+  display: inline-block;
 }
 
 .back-link:hover {
-  background-color: #1a242f;
+  background-color: var(--primary-light);
   transform: translateX(-3px);
 }

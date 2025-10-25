@@ -15,11 +15,27 @@ export default class NewsRouter {
   }
 
   private readonly routes = (): void => {
-    this.router.get('/', (_req: Request, res: Response) => {
-      const newsList = this.model.getAllNews()
-      this.view.renderAll(res, newsList)
+    this.router.get('/', (req: Request, res: Response) => {
+      const page = Number(req.query['page']) || 1
+      const limit = 6
+      const allNews = this.model.getAllNews()
+      const totalPages = Math.ceil(allNews.length / limit)
+
+      const startIndex = (page - 1) * limit
+      const paginatedNews = allNews.slice(startIndex, startIndex + limit)
+
+      this.view.renderAll(res, paginatedNews, page, totalPages)
     })
 
+    this.router.get('/search', (req: Request, res: Response) => {
+      const query = req.query['query'] as string
+      if (!query || query.trim() === '') {
+        return res.redirect('/news')
+      }
+
+      const results = this.model.searchNews(query)
+      this.view.renderAll(res, results, 1, 1)
+    })
 
     this.router.get('/:id', (req: Request, res: Response) => {
       const id = Number(req.params['id'])

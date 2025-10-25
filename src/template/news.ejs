@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,30 +7,50 @@
   <link rel="stylesheet" href="/css/news.css" />
   <link rel="stylesheet" href="/css/navbar.css">
 </head>
-
 <body>
-    <header class="navbar">
-      <h1>Portal de Noticias</h1>
-      <%- include('./common/navbar') %>
-    </header>
+  <header class="navbar">
+    <h1>Portal de Noticias</h1>
+    <%- include('./common/navbar') %>
+  </header>
 
-    <main class="news-container">
-      <% news.forEach(item=> { %>
-        <article class="news-card">
-          <h2 class="news-title">
-            <a href="/news/<%= item.id %>" style="text-decoration:none; color:inherit;">
-              <%= item.title %>
-            </a>
-          </h2>
-          <p class="news-summary">
-            <%= item.summary %>
-          </p>
-          <small class="news-date">
-            <%= item.date %>
-          </small>
-        </article>
+  <main class="news-container">
+    <% if (news.length === 0) { %>
+      <p class="no-news">No hay noticias disponibles.</p>
+    <% } else { %>
+      <section class="news-grid">
+        <% news.forEach(item => { %>
+          <article class="news-card">
+            <img src="<%= item.image %>" alt="<%= item.title %>" class="news-image">
+            <div class="news-content">
+              <h2 class="news-title">
+                <a href="/news/<%= item.id %>"><%= item.title %></a>
+              </h2>
+              <p class="news-summary"><%= item.summary %></p>
+              <small class="news-date"><%= item.date %></small>
+            </div>
+          </article>
         <% }) %>
-    </main>
-</body>
+      </section>
 
+      <!-- Paginación -->
+      <div class="pagination">
+        <% if (currentPage > 1) { %>
+          <a href="?page=<%= currentPage - 1 %>" class="page-btn">Anterior</a>
+        <% } %>
+
+        <% for (let i = 1; i <= totalPages; i++) { %>
+          <a href="?page=<%= i %>" class="page-btn <%= i === currentPage ? 'active' : '' %>"><%= i %></a>
+        <% } %>
+
+        <% if (currentPage < totalPages) { %>
+          <a href="?page=<%= currentPage + 1 %>" class="page-btn">Siguiente</a>
+        <% } %>
+      </div>
+    <% } %>
+  </main>
+
+  <footer>
+    <%- include('./common/footer') %>
+  </footer>
+</body>
 </html>
