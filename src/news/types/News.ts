@@ -5,4 +5,5 @@ export default interface News {
   content: string
   image: string
   date: string
+  comments: string
 }

@@ -5,7 +5,8 @@
     "summary": "Grupo encargado de usuarios",
     "content": "El grupo vizsla era el encargado del modulo usuarios para el juego NEXUS BATTLE IV, sin embargo estos fueron incapaces de realizar un simple papalogin",
     "image": "/assets/mcqueen.jpg",
-    "date": "2025-10-20"
+    "date": "2025-10-20",
+    "comments": "Los docentes no estuvieron contentos "
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "summary": "Grupo encargado de inventario y la interfaz",
     "content": "El grupo Eldar era el encargado del modulo inventario y la interfaz para el juego NEXUS BATTLE IV, fueron los mejores del curso gracias a lo increibles que son sus 2 integrantes que si trabajan.",
     "image": "/assets/driftmiku.png",
-    "date": "2025-10-21"
+    "date": "2025-10-21",
+    "comments": "Los docentes SI estuvieron contentos "
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "summary": "Grupo encargado de subastas y torneo",
     "content": "El grupo Rook era el encargado del modulo de subastas y torneo para el juego NEXUS BATTLE IV, al integrante luis fuentes lo llaman noe por cargar con ese poco de burros.",
     "image": "/assets/shinobu.jpg",
-    "date": "2025-10-21"
+    "date": "2025-10-21",
+    "comments": "Los docentes no estuvieron contentos "
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "summary": "Grupo encargado de juegos y misiones",
     "content": "El grupo Kryze era el encargado del modulo de juegos y misiones para el juego NEXUS BATTLE IV, al integrante luis fuentes lo llaman noe por cargar con ese poco de burros.",
     "image": "/assets/mikeu.jpg",
-    "date": "2025-10-22"
+    "date": "2025-10-22",
+    "comments": "Los docentes no estuvieron contentos "
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "summary": "Grupo encargado de la IA",
     "content": "El grupo Wren era el encargado del modulo de la IA para el juego NEXUS BATTLE IV, al integrante luis fuentes lo llaman noe por cargar con ese poco de burros.",
     "image": "/assets/megumin.jpg",
-    "date": "2025-10-22"
+    "date": "2025-10-22",
+    "comments": "Los docentes no estuvieron contentos "
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "summary": "Grupo encargado de subastas y torneo",
     "content": "El grupo PI1 grupo 1 era el encargado del modulo de subastas y torneo para el juego NEXUS BATTLE IV, al integrante luis fuentes lo llaman noe por cargar con ese poco de burros.",
     "image": "/assets/kazuha.jpg",
-    "date": "2025-10-22"
+    "date": "2025-10-22",
+    "comments": "Los docentes no estuvieron contentos "
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "summary": "Grupo encargado de subastas y torneo",
     "content": "El grupo PI1 grupo 2 era el encargado del modulo de subastas y torneo para el juego NEXUS BATTLE IV, al integrante luis fuentes lo llaman noe por cargar con ese poco de burros.",
     "image": "/assets/estado.jpg",
-    "date": "2025-10-22"
+    "date": "2025-10-22",
+    "comments": "Los docentes no estuvieron contentos "
   },
   {
     "id": 8,
@@ -61,6 +68,16 @@
     "summary": "el peor grupo",
     "content": "TENIAN A PAJARO",
     "image": "/assets/vi.jpg",
-    "date": "6552-05-25"
+    "date": "6552-05-25",
+    "comments": "Los docentes no estuvieron contentos"
+  },
+  {
+    "id": 9,
+    "title": "Grupo Wren",
+    "summary": "Raul me tenia mamado",
+    "content": "el grupo wren era el encargado de la ia, no saco un culo",
+    "image": "",
+    "date": "2025-10-27",
+    "comments": "Los docentes no estuvieron contentos "
   }
 ]

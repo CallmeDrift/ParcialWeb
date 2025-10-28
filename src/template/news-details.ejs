@@ -38,13 +38,22 @@
             <%= news.content %>
           </p>
 
-          <div class="news-meta">
-            <small class="news-date">Fecha de escritura: <%= news.date %></small>
-          </div>
+          <% if (news.comments && news.comments.trim() !=="" ) { %>
+            <section class="news-comments">
+              <h3>Comentarios</h3>
+              <p>
+                <%= news.comments %>
+              </p>
+            </section>
+            <% } %>
 
-          <div class="back-button">
-            <a href="/news" class="back-link">← Volver a la lista</a>
-          </div>
+              <div class="news-meta">
+                <small class="news-date">Fecha de escritura: <%= news.date %></small>
+              </div>
+
+              <div class="back-button">
+                <a href="/news" class="back-link">← Volver a la lista</a>
+              </div>
 
     </article>
   </main>

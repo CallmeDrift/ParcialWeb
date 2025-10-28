@@ -43,13 +43,13 @@ export default class NewsRouter {
     })
 
     this.router.post('/add', (req: Request, res: Response) => {
-      const { title, summary, content, image, date } = req.body
+      const { title, summary, content, image, date, comments } = req.body
 
       if (!title || !summary || !content || !date) {
         return res.status(400).send('Faltan campos obligatorios')
       }
 
-      this.model.saveNews({ title, summary, content, image, date })
+      this.model.saveNews({ title, summary, content, image, date, comments})
       return res.redirect('/news')
     })
 
