@@ -47,12 +47,20 @@
     "image": "/assets/kazuha.jpg",
     "date": "2025-10-22"
   },
-    {
+  {
     "id": 7,
     "title": "PI1 grupo 2",
     "summary": "Grupo encargado de subastas y torneo",
     "content": "El grupo PI1 grupo 2 era el encargado del modulo de subastas y torneo para el juego NEXUS BATTLE IV, al integrante luis fuentes lo llaman noe por cargar con ese poco de burros.",
     "image": "/assets/estado.jpg",
     "date": "2025-10-22"
+  },
+  {
+    "id": 8,
+    "title": "grupo rook",
+    "summary": "el peor grupo",
+    "content": "TENIAN A PAJARO",
+    "image": "/assets/vi.jpg",
+    "date": "6552-05-25"
   }
 ]

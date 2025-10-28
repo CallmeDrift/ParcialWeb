@@ -25,4 +25,16 @@ export default class NewsModel {
       news.title.toLowerCase().includes(query.toLowerCase())
     );
   }
+
+  saveNews(newsData: Omit<News, 'id'>): void {
+    const data = fs.readFileSync(this.filePath, 'utf-8')
+    const newsList = JSON.parse(data) as News[]
+
+    const last = newsList[newsList.length - 1]
+    const newId = last ? last.id + 1 : 1
+    const newNews: News = { id: newId, ...newsData }
+
+    newsList.push(newNews)
+    fs.writeFileSync(this.filePath, JSON.stringify(newsList, null, 2))
+  }
 }

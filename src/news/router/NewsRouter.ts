@@ -37,6 +37,23 @@ export default class NewsRouter {
       this.view.renderAll(res, results, 1, 1)
     })
 
+
+    this.router.get('/add', (_req: Request, res: Response) => {
+      this.view.renderAddForm(res)
+    })
+
+    this.router.post('/add', (req: Request, res: Response) => {
+      const { title, summary, content, image, date } = req.body
+
+      if (!title || !summary || !content || !date) {
+        return res.status(400).send('Faltan campos obligatorios')
+      }
+
+      this.model.saveNews({ title, summary, content, image, date })
+      return res.redirect('/news')
+    })
+
+
     this.router.get('/:id', (req: Request, res: Response) => {
       const id = Number(req.params['id'])
       const newsItem = this.model.getNewsById(id)

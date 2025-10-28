@@ -9,20 +9,20 @@ export default class RegisterModel {
         this.filePath = path.join(__dirname, '../../../database/news.json')
     }
 
-    saveNews(newsData: Omit<News, 'id'>): void {
+    saveNews(newsData: Omit<News, "id">): void {
+        const data = fs.readFileSync(this.filePath, "utf-8")
+        const newsList = JSON.parse(data) as News[]
 
-        const raw = fs.readFileSync(this.filePath, 'utf-8')
-        const parsed = JSON.parse(raw) as News[] | undefined
-        const newsList: News[] = Array.isArray(parsed) ? parsed : []
+        const last = newsList[newsList.length - 1]
+        const newId = last ? last.id + 1 : 1
 
-        const newId = newsList.reduce((maxId, item) => {
-            return item && typeof item.id === 'number' ? Math.max(maxId, item.id) : maxId
-        }, 0) + 1
-
-        const newNews: News = { id: newId, ...newsData }
+        const newNews: News = {
+            id: newId,
+            ...newsData
+        }
 
         newsList.push(newNews)
-        fs.writeFileSync(this.filePath, JSON.stringify(newsList, null, 2), 'utf-8')
+        fs.writeFileSync(this.filePath, JSON.stringify(newsList, null, 2))
     }
 }
 

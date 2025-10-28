@@ -19,16 +19,16 @@
       <h2 class="form-title">Agregar Nueva Noticia</h2>
       <form action="/news/add" method="post" class="news-form">
         <label for="title">Título</label>
-        <input type="text" id="title" name="title" required>
+        <input type="text" id="title" name="title" required autocomplete="off">
 
         <label for="summary">Resumen</label>
-        <input type="text" id="summary" name="summary" required>
+        <input type="text" id="summary" name="summary" required autocomplete="off">
 
         <label for="content">Contenido</label>
-        <textarea id="content" name="content" rows="6" required></textarea>
+        <textarea id="content" name="content" rows="6" required autocomplete="off"></textarea>
 
         <label for="image">URL de Imagen</label>
-        <input type="url" id="image" name="image">
+        <input type="url" id="image" name="image" autocomplete="off">
 
         <label for="date">Fecha</label>
         <input type="date" id="date" name="date" required>

@@ -13,16 +13,21 @@ export default class RegisterRouter {
     this.view = view
     this.routes()
   }
-
   private readonly routes = (): void => {
-    this.router.get('/', (_req: Request, res: Response) => {
+
+    this.router.get("/", (_req: Request, res: Response) => {
       this.view.renderAddForm(res)
     })
 
-    this.router.post('/', (req: Request, res: Response) => {
+    this.router.post("/", (req: Request, res: Response) => {
       const { title, summary, content, image, date } = req.body
+
+      if (!title || !summary || !content || !date) {
+        return res.status(400).send("Todos los campos obligatorios deben completarse.")
+      }
+
       this.model.saveNews({ title, summary, content, image, date })
-      this.view.redirectToNews(res)
+      return this.view.redirectToNews(res)
     })
   }
 }

@@ -9,4 +9,8 @@ export default class NewsView {
   renderOne(res: Response, news: News): void {
     res.render('news-details', { news })
   }
+
+    renderAddForm(res: Response): void {
+    res.render('addnews')
+  }
 }
