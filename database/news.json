@@ -43,5 +43,59 @@
     "image": "/assets/shinobu.jpg",
     "date": "2025-10-28",
     "comments": "El profe Briceño comento que el grupo menciona mucho la palabra \"ia\" pero no queda claro que modelo usaron. En general argumenta que es una presentacion sin sabor\r\n\r\nLa profe Danith argumento que \"Me estan mintiendo\"\r\n\r\nEl profe lenin dijo que aunque no entregaron valor, es conciente del trabajo que hubo detras. Y que si ellos no venden su producto,  quien lo vende entonces? Adicionalmente argumenta que no hay que ser pasivos a las criticas o a lo que les dicen"
+  },
+  {
+    "id": 6,
+    "title": "Equipo Arryn",
+    "summary": "el arryn presentó ...",
+    "content": "El equipo arryn presentó ...",
+    "image": "",
+    "date": "2025-10-28",
+    "comments": "El profe briceño dijo que tras los 20 min de exposicion no se lograba entender correctamente de que trataba el proyecto. El profe lenin dijo que no tenian marco conceptual, por lo que no se entiende lo que usaron"
+  },
+  {
+    "id": 7,
+    "title": "Equipo Baratheon",
+    "summary": "El equipo baratheon presento QueHayPaHacer ...",
+    "content": "El equipo baratheon presento QueHayPaHacer, una plataforma...",
+    "image": "",
+    "date": "2025-10-28",
+    "comments": "El profe Francisco comento que algunos conceptos no se explicaron correctamente\r\n\r\nEl profe Briceño dijo que no quedaba claro que se necesitaba para entrenar un chatbot\r\n\r\nEl profe Lenin dijo que los requerimientos estaban mal planteados y que no se dejaba clara la diferencia entre requerimientos funcionales y no funcionales"
+  },
+  {
+    "id": 8,
+    "title": "Equipo Lannister",
+    "summary": "El equipo lannister presento...",
+    "content": "El equipo lannister presento...",
+    "image": "",
+    "date": "2025-10-28",
+    "comments": "El profe lenin comento que no habia quedado del todo claro el uso de web scraping en el proyecto"
+  },
+  {
+    "id": 9,
+    "title": "Equipo Stark",
+    "summary": "El equipo Stark presento...",
+    "content": "El equipo Stark presento...",
+    "image": "",
+    "date": "2025-10-28",
+    "comments": "El profe Briceño felicito al equipo por tener la presentacion bien estructurada\r\n\r\nEl profe Lenin felicito al equipo por la explicacion del marco conceptual, pero menciono que no se muestra que se haya aplicado scrum"
+  },
+  {
+    "id": 10,
+    "title": "Equipo Targeryen",
+    "summary": "El equipo Targeryen presento la teoria del color",
+    "content": "El equipo Targeryen presento la teoria del color",
+    "image": "",
+    "date": "2025-10-28",
+    "comments": "El profe Lenin dijo que se habia hecho una buena presentacion, pero que habia cosas que no eran aclaradas, por ejemplo, el tema de que \"los colores ayudaron al aprendizaje\""
+  },
+  {
+    "id": 11,
+    "title": "Equipo Tyrell",
+    "summary": "El equipo tyrell se los papearon",
+    "content": "El equipo tyrell se los papearon",
+    "image": "",
+    "date": "2025-10-28",
+    "comments": "El profe Lenin copmento que el grupo daba muchas cosas por hecho, debian manejar un lenguaje formal, las diapositivas parecian hechas a ultima ahora y que habia personas que no sabian lo que estaban diciendo, ademas recalco que el diagrama de arquitectura no estaba bien hecho"
   }
 ]
