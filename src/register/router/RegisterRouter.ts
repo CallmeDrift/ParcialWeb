@@ -20,13 +20,13 @@ export default class RegisterRouter {
     })
 
     this.router.post("/", (req: Request, res: Response) => {
-      const { title, summary, content, image, date } = req.body
+      const { title, summary, content, image, date, comments } = req.body
 
       if (!title || !summary || !content || !date) {
         return res.status(400).send("Todos los campos obligatorios deben completarse.")
       }
 
-      this.model.saveNews({ title, summary, content, image, date })
+      this.model.saveNews({ title, summary, content, image, date, comments })
       return this.view.redirectToNews(res)
     })
   }

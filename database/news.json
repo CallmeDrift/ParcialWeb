@@ -2,82 +2,46 @@
   {
     "id": 1,
     "title": "Grupo viszla",
-    "summary": "Grupo encargado de usuarios",
-    "content": "El grupo vizsla era el encargado del modulo usuarios para el juego NEXUS BATTLE IV, sin embargo estos fueron incapaces de realizar un simple papalogin",
+    "summary": "Grupo encargado de usuarios para nexus battles IV",
+    "content": "El grupo vizsla era el encargado del modulo usuarios para el juego NEXUS BATTLE IV, sin embargo en su presentacion no supieron explicar su desarrollo y solo presentaron excusas, por lo que los docentes no quedaron contentos con su trabajo.",
     "image": "/assets/mcqueen.jpg",
-    "date": "2025-10-20",
-    "comments": "Los docentes no estuvieron contentos "
+    "date": "2025-10-28",
+    "comments": "Uno de los profesores presentes menciono que en el caso de este grupo, era mejor opcion asumir el 0 y no presentarse a solo presentar excusas.  El profe briceño dijo que directamente no habia producto"
   },
   {
     "id": 2,
     "title": "Grupo Eldar",
-    "summary": "Grupo encargado de inventario y la interfaz",
-    "content": "El grupo Eldar era el encargado del modulo inventario y la interfaz para el juego NEXUS BATTLE IV, fueron los mejores del curso gracias a lo increibles que son sus 2 integrantes que si trabajan.",
+    "summary": "Grupo encargado de inventario y la interfaz para nexus battles IV",
+    "content": "El grupo Eldar era el encargado del modulo inventario y la interfaz para el juego NEXUS BATTLE IV, su presentacion fue buena, explicaron bien su trabajo en detalle, sin embargo los docentes tuvieron algunas criticas sobre sus diagramas y uso de ciertos elementos.",
     "image": "/assets/driftmiku.png",
-    "date": "2025-10-21",
-    "comments": "Los docentes SI estuvieron contentos "
+    "date": "2025-10-28",
+    "comments": "El profe lenin argumento que aunque varios diagramas tenian errores, el trabajo en general estaba bien."
   },
   {
     "id": 3,
-    "title": "Grupo Rook",
-    "summary": "Grupo encargado de subastas y torneo",
-    "content": "El grupo Rook era el encargado del modulo de subastas y torneo para el juego NEXUS BATTLE IV, al integrante luis fuentes lo llaman noe por cargar con ese poco de burros.",
-    "image": "/assets/shinobu.jpg",
-    "date": "2025-10-21",
-    "comments": "Los docentes no estuvieron contentos "
+    "title": "Grupo Kryze",
+    "summary": "Grupo encargado del juego para Nexus Battles IV",
+    "content": "El grupo Kryze fue el encargado del desarrollo del juego para nexus battles 4, hizo una muy buena presentacion y fue felicitado por el profe lenin",
+    "image": "/assets/mikeu.jpg",
+    "date": "2025-10-28",
+    "comments": "Todos los profesores argumentaron que el grupo hizo un excelente trabajo y una excelente presentacion"
   },
   {
     "id": 4,
-    "title": "Grupo Kryze",
-    "summary": "Grupo encargado de juegos y misiones",
-    "content": "El grupo Kryze era el encargado del modulo de juegos y misiones para el juego NEXUS BATTLE IV, al integrante luis fuentes lo llaman noe por cargar con ese poco de burros.",
-    "image": "/assets/mikeu.jpg",
-    "date": "2025-10-22",
-    "comments": "Los docentes no estuvieron contentos "
+    "title": "Grupo Rook",
+    "summary": "Grupo encargado del modulo torneo y subastas",
+    "content": "El grupo Rook era el encargado de los modulos torneo y subastas, su presentacion fue buena, aunque se denoto muy poca energia al presentar sus resultados",
+    "image": "/assets/megumin.jpg",
+    "date": "2025-10-28",
+    "comments": "La profe Danith manifesto que se notaba mucha deuda tecnica en la presentacion, lo cual no terminaba de comprender\r\n\r\nEl profe Lenin dijo que el grupo habia llevado bien la teoria para definir que rumbo seguir"
   },
   {
     "id": 5,
-    "title": "Grupo Wren",
-    "summary": "Grupo encargado de la IA",
-    "content": "El grupo Wren era el encargado del modulo de la IA para el juego NEXUS BATTLE IV, al integrante luis fuentes lo llaman noe por cargar con ese poco de burros.",
-    "image": "/assets/megumin.jpg",
-    "date": "2025-10-22",
-    "comments": "Los docentes no estuvieron contentos "
-  },
-  {
-    "id": 6,
-    "title": "PI1 grupo 1",
-    "summary": "Grupo encargado de subastas y torneo",
-    "content": "El grupo PI1 grupo 1 era el encargado del modulo de subastas y torneo para el juego NEXUS BATTLE IV, al integrante luis fuentes lo llaman noe por cargar con ese poco de burros.",
-    "image": "/assets/kazuha.jpg",
-    "date": "2025-10-22",
-    "comments": "Los docentes no estuvieron contentos "
-  },
-  {
-    "id": 7,
-    "title": "PI1 grupo 2",
-    "summary": "Grupo encargado de subastas y torneo",
-    "content": "El grupo PI1 grupo 2 era el encargado del modulo de subastas y torneo para el juego NEXUS BATTLE IV, al integrante luis fuentes lo llaman noe por cargar con ese poco de burros.",
-    "image": "/assets/estado.jpg",
-    "date": "2025-10-22",
-    "comments": "Los docentes no estuvieron contentos "
-  },
-  {
-    "id": 8,
-    "title": "grupo rook",
-    "summary": "el peor grupo",
-    "content": "TENIAN A PAJARO",
-    "image": "/assets/vi.jpg",
-    "date": "6552-05-25",
-    "comments": "Los docentes no estuvieron contentos"
-  },
-  {
-    "id": 9,
-    "title": "Grupo Wren",
-    "summary": "Raul me tenia mamado",
-    "content": "el grupo wren era el encargado de la ia, no saco un culo",
-    "image": "",
-    "date": "2025-10-27",
-    "comments": "Los docentes no estuvieron contentos "
+    "title": "Grupo wren",
+    "summary": "Grupo encargado de la IA del juego Nexus Battle IV",
+    "content": "El grupo wren fue el encargado de desarrollar la IA para las batallas, a pesar de una buena exposicion, no lograron contentar a los jurados",
+    "image": "/assets/shinobu.jpg",
+    "date": "2025-10-28",
+    "comments": "El profe Briceño comento que el grupo menciona mucho la palabra \"ia\" pero no queda claro que modelo usaron. En general argumenta que es una presentacion sin sabor\r\n\r\nLa profe Danith argumento que \"Me estan mintiendo\"\r\n\r\nEl profe lenin dijo que aunque no entregaron valor, es conciente del trabajo que hubo detras. Y que si ellos no venden su producto,  quien lo vende entonces? Adicionalmente argumenta que no hay que ser pasivos a las criticas o a lo que les dicen"
   }
 ]
