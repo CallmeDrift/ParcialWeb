@@ -97,5 +97,41 @@
     "image": "",
     "date": "2025-10-28",
     "comments": "El profe Lenin copmento que el grupo daba muchas cosas por hecho, debian manejar un lenguaje formal, las diapositivas parecian hechas a ultima ahora y que habia personas que no sabian lo que estaban diciendo, ademas recalco que el diagrama de arquitectura no estaba bien hecho"
+  },
+  {
+    "id": 12,
+    "title": "Grupo 1 miercoles",
+    "summary": "El grupo 1 presento su sistema de gestion de trenes de transporte de pasajeros",
+    "content": "El grupo 1 presento su sistema de gestion de trenes de transporte de pasajeros",
+    "image": "",
+    "date": "2025-05-29",
+    "comments": "el profe lenin dijo que no tenian nada presentable, ademas de que durante toda la presentacion estaban leyendo\r\n\r\nel profe francisco remarco que estuvieron leyendo todas las diapositivas, adicionalmente, argumento que no tenian marco conceptual y que se veia muy improvisado, finalmente comento que colocaron objetivos en el marco conceptual"
+  },
+  {
+    "id": 13,
+    "title": "Grupo 2 Estructuras",
+    "summary": "El grupo 2 presento su sistema de gestion de trenes de transporte de pasajeros",
+    "content": "El grupo 2 presento su sistema de gestion de trenes de transporte de pasajeros, no les fue tan mal",
+    "image": "",
+    "date": "2025-10-29",
+    "comments": "la profe sandra critico la falta de compromiso del grupo porque algunos miembros llegaron tarde o directamente no llegaron\r\n\r\nla profe danith comento que no tenian la actitud correcta para exponer\r\n\r\nel profe lenin comento que no tiene sentido que hayan usado java para una app web\r\n\r\nel profe francisco critico que se haya dicho que por temas de tiempo no se iba a exponer una parte de la presentacion, tambien menciono que se denotaba quien habia trabajado y quien no"
+  },
+  {
+    "id": 14,
+    "title": "grupo 3",
+    "summary": "El grupo 3 dio una muy buena exposicion",
+    "content": "el grupo 3 presento su proyecto de gestion de trenes de transporte de pasajeros, dando una muy buena y clara presentacion, sin embargo fallaron en no presentar conclusiones",
+    "image": "",
+    "date": "2025-10-29",
+    "comments": "\r\nLa profe sandra comento que no debian dejar que una presentacion tan buena se caiga por un detalle como las conclusiones, y que se notaba que no habian terminado de prepararae\r\n\r\nLa profe claudia dijo que mostrara el detalle del que se estaba hablando pq hablaban del grafo y no lo mostraban\r\n\r\nel profe lenin los felicito, dijo que se veia el trabajo realizado, que se notaba que no lo hicieron con gpt asi por lo que les felicito, recalco que podian mostrar de mejor forma los diagramas cuando son tan grandes, y que deberían mostrar mas como implementaron la metodologia kanvan\r\n\r\nel profe francisco los felicito por su trabajo"
+  },
+  {
+    "id": 15,
+    "title": "grupo 4",
+    "summary": "el grupo 4 no se presento",
+    "content": "el grupo 4 no se presento nada por motivos desconocidos",
+    "image": "",
+    "date": "2025-10-29",
+    "comments": "no hubo comentarios"
   }
 ]
