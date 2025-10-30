@@ -40,23 +40,57 @@
 
   <main class="home-container">
     <h2 class="section-title">Últimas noticias</h2>
-    <div class="news-grid">
-      <% latestNews.forEach(item=> { %>
-        <div class="news-card">
-          <div class="image-container">
-            <img src="<%= item.image %>" alt="<%= item.title %>" class="news-image">
+
+    <div class="carousel-container">
+      <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+
+      <div class="carousel" id="newsCarousel">
+        <% latestNews.forEach((item, index)=> { %>
+          <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+            <div class="image-container">
+              <img src="<%= item.image %>" alt="<%= item.title %>" class="news-image">
+            </div>
+            <h3 class="news-title">
+              <%= item.title %>
+            </h3>
+            <p class="news-summary">
+              <%= item.summary %>
+            </p>
+            <a href="/news/<%= item.id %>" class="read-more">Leer más →</a>
           </div>
-          <h3 class="news-title">
-            <%= item.title %>
-          </h3>
-          <p class="news-summary">
-            <%= item.summary %>
-          </p>
-          <a href="/news/<%= item.id %>" class="read-more">Leer más →</a>
-        </div>
-        <% }) %>
+          <% }) %>
+      </div>
+
+      <button class="carousel-btn next" id="nextBtn">&#10095;</button>
     </div>
   </main>
+
+  <script>
+    const items = document.querySelectorAll('.carousel-item');
+    let current = 0;
+
+    function updateCarousel() {
+      items.forEach((item, index) => {
+        item.classList.remove('active', 'prev', 'next');
+        if (index === current) item.classList.add('active');
+        else if (index === (current - 1 + items.length) % items.length) item.classList.add('prev');
+        else if (index === (current + 1) % items.length) item.classList.add('next');
+      });
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => {
+      current = (current - 1 + items.length) % items.length;
+      updateCarousel();
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+      current = (current + 1) % items.length;
+      updateCarousel();
+    });
+
+    updateCarousel();
+  </script>
+
 
   <footer>
     <%- include('./common/footer') %>

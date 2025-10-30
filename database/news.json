@@ -133,5 +133,95 @@
     "image": "",
     "date": "2025-10-29",
     "comments": "no hubo comentarios"
+  },
+  {
+    "id": 16,
+    "title": "Urban Shoes",
+    "summary": "El grupo urban shoes presento su sistema de inventario de zapatos",
+    "content": "El grupo urban shoes presento su sistema de inventario de zapatos, la exposicion estuvo decente, pero hubo varios apuntes por parte de los doncetes",
+    "image": "",
+    "date": "2025-10-29",
+    "comments": "La profe sandra felicito al grupo por acatar las correcciones que les habian hecho, mejorando su presentacion\r\n\r\nLa profe danith comento que habia visto muestras de uso de IA en la presentacion\r\n\r\nEl profe lenin dijo que la presentacion estaba muy bien, sin embargo comento que algunos diagramas podrian mejorar, que el grupo estaba entendiendo incorrectamente como se estructura el mvc y que usaron el diagrama incorrecto para expresar el flujo del diagrama"
+  },
+  {
+    "id": 17,
+    "title": "Rana Shoes",
+    "summary": "El grupo Rana Shoes presento su creacion AUTOMATICA de un zapato",
+    "content": "El grupo rana shoes presentó su sistema en el cual gestionaban la creacion de zapatos, lamentablemente su presentacion no fue la mejor por lo que fue duramente criticada por el jurado y el publico",
+    "image": "",
+    "date": "2025-10-29",
+    "comments": "El profe Briceño dijo que el objetivo estaba muy largo y no se mencionaba API REST, y que el diagrama de clases no decia realmente nada\r\n\r\nEl profe Lenin dijo que habia muchas cosas de equipos anteriores que aplicaban para este grupo, tambien comento que los requerimientos no eran especificos. Sin embargo, hizo enfasis en que los diagramas de flujo y secuencia estaban bien hechos"
+  },
+  {
+    "id": 18,
+    "title": "Grupo veterinaria & spa ",
+    "summary": "El grupo presento su sistema de agendamiento de veterinaria",
+    "content": "El grupo presento su sistema de agendamiento de veterinaria, aunque tuvieron algunas fallas, el grupo hizo un buen trabajo",
+    "image": "",
+    "date": "2025-10-29",
+    "comments": "El profe briceño felicito al grupo por su trabajo\r\n\r\nLa profe Claudia dijo que le gustaba que usaran las diapositivas como elemento de ayuda, pero que la conclusion estaba completa en la diapositiva, por lo que debian procurar no colocar todo el texto\r\n\r\nEl profe lenin dijo que habian hecho unos detalles, y auqnue hubiese unos detalles de otros grupos aplicables a este, hicieron un buen trabajo, recalcando el marco conceptual"
+  },
+  {
+    "id": 19,
+    "title": "avitech",
+    "summary": "El grupo avitech",
+    "content": "El equipo presento una aplicacion que permitia la gestion de una finca  y sus activos, el equipo presento un sistema que media el tamaño de los huevos de los galpones de la finca. Sin embargo la exposicion fue lamentable, siendo recalcado por todos los docentes que se tenia nulo conocimiento del tema",
+    "image": "",
+    "date": "2025-10-29",
+    "comments": "El profe Francisco comento que no tenian absolutamente nada de UML, ningun caso de uso, habian realizado/inventado un arbol de usos, no tenian nigun diagrama y no podia decirse que utilizaron SQL por la razon de que \"es lo unico que conocen\"\r\n\r\nEl publico en general considero poco profesional, grosera e irrespetuosa la forma en la que uno de los integrantes se comunico con el jurado"
+  },
+  {
+    "id": 20,
+    "title": "Byfrost ststems",
+    "summary": "El grupo Byfrost presento ",
+    "content": "El equipo ByFrost presento un sistema ...",
+    "image": "",
+    "date": "2025-10-29",
+    "comments": "El profe briceño comento que habian puesto \"soluciones de software\" cuando solo iban a entregar un producto, tambien comento que los diagramas no se lograban leer absolutamente nada\r\n\r\nLa profe danith comento que no veia evidencia de una solucion tecnologica, y que los ejemplos mostrados no eran evidencia de nada, finalmente dijo que en las conclusiones se decian mentiras\r\n\r\nEl profe Ali dijo que el objetivo general era perfecto solo para el cliente pues era muy abierto, cosa que no podia pasar. Adicionalmente dijo que las conclusiones no decian nada\r\n\r\nLa profe Claudia dijo que estaban leyendo todos los objetivos y que las conclusiones no eran correctas\r\n\r\nLa profe sandra dijo que tenian mucho que mostrar pero que no lo hicieron, y que no mostraron ninguna evidencia de FRP ni VOIP\r\n\r\nEl profe Javier les recomendo que buscaran metodologia smart para construir mejores objetivos"
+  },
+  {
+    "id": 21,
+    "title": "Grupo bioconecta s.a.s",
+    "summary": "El Grupo bioconecta s.a.s presentó su proytecto",
+    "content": "el grupo presento su sistema para la gestion de proyectos",
+    "image": "",
+    "date": "2025-10-29",
+    "comments": "El profe briceño comento que tenian objetivos con 3 y 4 verbos, los diagramas no eran UML y no indicaban nada\r\n\r\nLa profe Claudia comento que el objetivo no debe definir las 3 partes del sistema, sino que eso era trabajo de los especificos\r\n\r\nLa profe danith dijo que habia errores de ortografia, especialmente en los nombres, no tenian objetivos sino actividades sueltas, pues estos no tenian un \"como\" ni \"para que\", finalmente comento que los presentadores dijeron que usaron Scrum pero que habia un lider en el proyecto\r\n\r\nEl profe Ali dijo que el objetivo estaba mal y que no habia lideres en Scrum"
+  },
+  {
+    "id": 22,
+    "title": "Ecophos",
+    "summary": "El grupo Ecophos presento su sistema de energia renovable",
+    "content": "El grupo Ecophos presento su sistema de gestion de energias renovables",
+    "image": "",
+    "date": "2025-10-29",
+    "comments": "El profe briceño comento que no se entendia donde estaba la gestion de las energias renovables, no se complementaba el objetivo con el trabajo de los otros grupos, no se entendia a que se referian al mencionar \"dinamismo\" y que habian mencionado que github era un \"entorno de desarrollo\"\r\n\r\nla profe danith dijo que habian faltas de ortografia en los nombres, que tenian que revisar los puntos de historia, ya que mostraban que tenian 1400 puntos\r\n\r\nla profe sandra dijo que no debian revolver los objetivos del proyecto y los objetivos del negocio"
+  },
+  {
+    "id": 23,
+    "title": "Agrotechnova",
+    "summary": "El modulo agrotechnova tenia un participante re rico 🫦",
+    "content": "El grupo presento su sistema, el cual debía contar con módulos de gestión de recursos enfocados en los campesinos y contribuir en el entorno agrónomo del país.",
+    "image": "/assets/mikeu.jpg",
+    "date": "2025-10-29",
+    "comments": "El profe Briceño dijo que se evidenciaba un buen trabajo, pero que no tenian valor pues tenian en localhost el \"despliegue\". Tambien comento que no quedaba claro el marco teorico en cuanto a dns, http y voip\r\n\r\nEl profe Ali comento que se veia el esfuerzo que habian hecho, pero las conclusiones solo eran \"lo logramos\", dijo que no podian decir que habian adaptado Scrum, pues este se usaba o se implementaba otra cosa, tambien comento que habian dicho que \"se asigno la responsabilidad\" y en scrum eso no se hace. Sin embargo los felicito en general por el trabajo"
+  },
+  {
+    "id": 24,
+    "title": "J&C automation & robotics",
+    "summary": "no se que presentaron",
+    "content": "no se que presentaron",
+    "image": "/assets/kazuha.jpg",
+    "date": "2025-10-29",
+    "comments": "El profe Briceño dijo que el certificado ssl no cuadra ya que esta en localhost, y eso no es posible, es un mal autofirmado. \r\n\r\nLa profe danith felicito al representante del grupo por presentar correctamente su trabajo, pero que se generaba la duda de pq no lograron montar la pagina en un servidor"
+  },
+  {
+    "id": 25,
+    "title": "CyberIntegrity",
+    "summary": "CyberIntegrity presento su expo",
+    "content": "CyberIntegrity presento su exposicion en el que destacaba que este grupo era formado a partir de otro grupo que se habia disuelto, empezando su trabajo de 0 con 1 sprint y medio de retraso",
+    "image": "/assets/vi.jpg",
+    "date": "2025-10-29",
+    "comments": "La profe sandra felicito al grupo por el trabajo realizado teniendo en cuenta su tardio inicio\r\n\r\nLa profe danith menciono que habain presentado un prototipo funcional, mas no una aplicacion\r\n\r\nEl profe briceño dijo que habian mencionado una politica, pero no habian especificado cual, tambien comento que no se habia mostrado una matriz de riesgos, y que sin esta no se podian generar politicas y protocolos\r\n\r\nEl profe Ali comento que el diagrama de paquetes era confuso, que podian explicar el despliegue por medio de un diagrama de componentes y que aunque entendia lo que intentaban hacer, no era la mejor manera de hacerlo"
   }
 ]
