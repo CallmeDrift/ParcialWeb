@@ -223,5 +223,122 @@
     "image": "/assets/vi.jpg",
     "date": "2025-10-29",
     "comments": "La profe sandra felicito al grupo por el trabajo realizado teniendo en cuenta su tardio inicio\r\n\r\nLa profe danith menciono que habain presentado un prototipo funcional, mas no una aplicacion\r\n\r\nEl profe briceño dijo que habian mencionado una politica, pero no habian especificado cual, tambien comento que no se habia mostrado una matriz de riesgos, y que sin esta no se podian generar politicas y protocolos\r\n\r\nEl profe Ali comento que el diagrama de paquetes era confuso, que podian explicar el despliegue por medio de un diagrama de componentes y que aunque entendia lo que intentaban hacer, no era la mejor manera de hacerlo"
+  },
+  {
+    "id": 26,
+    "title": "Eco Movil",
+    "summary": "Eco movil presento su aplicacion para reciclaje ",
+    "content": "Eco movil presento su aplicacion para reciclaje y puntos en la upb",
+    "image": "",
+    "date": "2025-10-30",
+    "comments": "La profe claudia dijo \"si un compañero no hizo nd, no carguen con el\"\r\n\r\nEl porfe javier dijo \"muy bien pero podrian mejorar un poco la narrativa\"\r\n\r\nEl profe Omar dijo \"lo hicieron bien, se pudieron suplir sus roles entre si, y no se noto la ausencia de su compañero\""
+  },
+  {
+    "id": 27,
+    "title": "Upb Study +",
+    "summary": "El grupo upb study + presento su red social",
+    "content": "El grupo upb study + presento su red social para los estudiantes y la comunidad educativa enfocada en el estudio y aprendizaje",
+    "image": "",
+    "date": "2025-10-30",
+    "comments": "El profe Lenin dijo \"me gusto que pusieron el marco legal\"\r\n\r\nEl profe Francisco dijo \"muchas felicitaciones por su proyecto\"\r\n\r\nLa profe sandra dijo \"excelente lo del video, me encanto ese detalle y es un plus\"\r\n\r\nEl profe omar dijo \"felicitarlos tambien, orgullo tenerlos como estudiantes, y dieron un gran primer paso\"\r\n\r\nEl profe javier dijo \"felicitaciones, hicieron muy buen trabajo, se ve que aplicaron todo lo que han aprendido este semestre\""
+  },
+  {
+    "id": 28,
+    "title": "Pet finder",
+    "summary": "El grupo presento su rastreador de mascotas",
+    "content": "El grupo PetFinder presento su software con un rastreador gps para mascotas perdidas",
+    "image": "",
+    "date": "2025-10-30",
+    "comments": "el profe lenin dijo \"muy bien, muy chevre, el objetivo esta bien hecho, pero de escribirlo a que este hecho hay mucho camino, en cuanto al video, si uds no venden su producto, nadie lo hara por ustedes\"\r\n\r\nla profe sandra dijo \"vendan su producto con ganas, no digan que es una 'aplicacioncita' \"\r\n\r\nel profe omar dijo \"lo sacaron bien, cuando dijeron \"sin necesidad de programar\" ahi hay alguien que programo ese sistema por bloques, y uds hicieron el algoritmo, que puede ser mas caro que codificarlo\"\r\n"
+  },
+  {
+    "id": 29,
+    "title": "UPB SEÑAS",
+    "summary": "El grupo presento su traductor",
+    "content": "El grupo UPB SEÑAS presento su traductor de lenguaje de señas con el que lograron reconocer este lenguaje y traducirlo al alfabeto comun",
+    "image": "",
+    "date": "2025-10-30",
+    "comments": "la profe claudia dijo \"a veces el estudiante dice cosas como \"mas sin embargo\" y repiten lo mismo, deberian tratar de mejorar su español y la forma de hablar\"\r\n\r\nla profe sandra dijo \" esta idea puede puede empezar como algo simple y avanzar a algo mucho mas grande, esta super que supieron limitar su proyecto\"\r\n\r\nla profe danith dijo \"me gusta de donde sacaron su idea e inspiracion\"\r\n\r\nel profe javier dijo \"recuerden que la ia es una herramienta,  uds son los que deben hacer las cosas, si uds no le dicen que hacer la ia no hara nada, felicidades por su trabajo, se ve que le han metido ganas\"\r\n\r\nel profe omar dijo \"agradecerles su trabajo, felicitarlos por lo que hicieron\""
+  },
+  {
+    "id": 30,
+    "title": "Electromed ",
+    "summary": "electromed presento su sistema de monitoreo de electrolitos",
+    "content": "El grupo presento su sistema que permita al personal medico el registro de datos, monitoreo de electrolitos y el recibimiento de alertas ante desequilibrios",
+    "image": "",
+    "date": "2025-10-31",
+    "comments": "La profe danith dijo \"dijeron que documentaron pruebas de aceptacion en un objetivo, no lo hicieron. No hay referencias en las imagenes. Uno de los objetivos, no se cumplio. \"\r\n\r\nEl profe lenin dijo \"no definieron algunos terminos en el marco, por lo que toco preguntarselos. Los objetivos estan mal. El objetivo general tiene 2 verbos. Tienen errores que los de primer semestre no tienen. Los casos de uso estan mal. No tiene politicas de seguridad. Las conclusiones son \"lo logramos\". Decir \"solo conociamos x tecnologia\" no es razon para usarla\"\r\n\r\nel profe francisco dijo \"no vi si utilizaron algun patron de diseño\""
+  },
+  {
+    "id": 31,
+    "title": "BlessHealth24/7 ",
+    "summary": "El grupo presento su sistema medico",
+    "content": "El grupo presento su sistema medico en el cual por medio de los sintomas de la personas, recomendaban tratamientos a realizar",
+    "image": "",
+    "date": "2025-10-30",
+    "comments": "El profe briceño dijo \"usaron incorrectamente el termino 'sobreajuste' \"\r\n\r\nEl profe lenin dijo \"decir que la app no debe cumplir la ley no lo exime de la ley. Tiene la solucion en la pregunta problema. El marco conceptual no tiene referencias. Dicen que no tienen politicas pero tienen una matriz de riesgos. Para todo el trabajo realizado, 3 conclusiones son muy pocas.\"\r\n\r\nLa profe sandra dijo \"que de novedoso tienen? Pq es muy parecido a otro grupo de pi1\""
+  },
+  {
+    "id": 32,
+    "title": "PicLab",
+    "summary": "El grupo presento su sistema para el proceso de imagenes",
+    "content": "El grupo presento un sistema distribuido para el procesamiento de imagenes, que permita balancear la carga entre multiples nodos de computo, reduciendo el tiempo de respuesta y asegurando la disponibilidad del servicio",
+    "image": "",
+    "date": "2025-10-30",
+    "comments": "El profe Ali dijo \"habla de soap, se refiere a ellos como personitas. Estuvo muy bien el proyecto.\"\r\n\r\nEl profe lenin dijo \"faltan referencias pero hizo un buen trabajo\""
+  },
+  {
+    "id": 33,
+    "title": "Tongi ",
+    "summary": "El grupo presento su traductor",
+    "content": "El grupo presento un traductor con las funciones de traduccion en tiempo real de voz y de imagen, teniendo funciones offline",
+    "image": "",
+    "date": "2025-10-30",
+    "comments": "El profe ali dijo \"el proyecto esta muy bueno, pero al ser evento academico debe recalcarse que manejaron mal el tiempo, no deben poner atributos publicos en los diagramas,  la arquitectura estuvo bien\"\r\n\r\nEl profe Lenin dijo \"muy bien, su avance es muy notorio, buen trabajo\""
+  },
+  {
+    "id": 34,
+    "title": "Histofy ",
+    "summary": "El grupo presento un sistema de manejo de historias clinicas",
+    "content": "El grupo presento un sistema que permita la gestion de historias clinicas en establecimientos hospitalarios",
+    "image": "",
+    "date": "2025-10-30",
+    "comments": "El profe Ali dijo \"es un buen proyecto pero manejaron mal el tiempo, en el diagrama esta mal el titulo y no se explica que significa cada item. \"\r\n\r\nEl profe Lenin dijo \"contaron historias y no mostraron nd. aunqje se ve que funciona, la presentacion es deficiente. No hay referencias, no coordinan lo que dicen con lo que se muestra. No parece un proyecto integrador 3.\""
+  },
+  {
+    "id": 35,
+    "title": "MeditranslateAI",
+    "summary": "El equipo presento su aplicacion de uso medico",
+    "content": "El equipo presento su aplicacion movil que permita unificar y traducir los datos confusos de las historias clinicas facilitando su comprension",
+    "image": "",
+    "date": "2025-10-30",
+    "comments": "El profe briceño dijo \"no tienen animos, le perdi interes a la exposicio\"\r\n\r\nEl profe Lenin dijo \"no tengo nada que preguntar, pq no hay nada, si ya han visto pasar un monton de grupos pasar y han oido su correcciones, no entiendo pq no tomaron cartas para corregir. El marco teorico no tiene referencia ni relevancia\"\r\n\r\nEl profe Ali dijo \" estaban descubriendo el proyecto y las diapos a medida que las leyeron\"\r\n\r\nLa profe claudia \"anoten las recomendaciones de los otros para que las apliquen uds tambien\""
+  },
+  {
+    "id": 36,
+    "title": "PixPar",
+    "summary": "Procesamiento de imagenes",
+    "content": "El grupo presento su sistema de procesamiento de grandes volumenes de imagenes",
+    "image": "",
+    "date": "2025-10-30",
+    "comments": "El profe Ali dijo \"aunque se aue el producto esta completo, pasaron muy rápido el resultado de la aplicación\"\r\n\r\nEl profe Lenin dijo \"Dijeron mucho \"basicamente\". Usaron mucho \"etc.\" Que hace sentir idiota al publico. La semantica y sintaxis del modelo estan muy bien. En el diagrama de clases tiene muchas dependencias\"\r\n\r\nLa profe Claudia dijo \"felicidades pq se nota que saben de lo que estan hablando\""
+  },
+  {
+    "id": 37,
+    "title": "DistriFile ",
+    "summary": "La estudiante desarrollo un sistema de almacenamiento",
+    "content": "Sistema de almacenamiento distribuido de archivos con redundancia que almacena estos en multiples nodos independientes coordinados por un servidor de aplicacion ",
+    "image": "",
+    "date": "2025-10-30",
+    "comments": "El profe lenin dijo \"muy bien trabajo, muy bien la exposicion, el flujo y todo\"\r\n\r\nLa profe Claudia dijo \"la felicito pq hizo el trabajo muy bien y ademas sola, pq con grupos de 7 no salen con nd\"\r\n\r\nEl profe Ali dijo \"lo hizo sola y por ello la felicito\""
+  },
+  {
+    "id": 38,
+    "title": "BlessImage",
+    "summary": "El grupo presento un sistema de edicion de imagenes",
+    "content": "El grupo presento un sistema de edicion de imagenes tanto individuales como por lotes, pudiendo alterar estas en grandes cantidades",
+    "image": "",
+    "date": "2025-10-30",
+    "comments": "El profe Ali dijo \"el proyecto esta completo, el producto esta completo. Hay un detalle en un diagrama, un error en la relacion de una interfaz y una clase\"\r\n\r\nEl profe Lenin dijo \"deberian contar el algoritmo que crearon, pq ese es el core del negocio. Muy buen trabajo\""
   }
 ]
