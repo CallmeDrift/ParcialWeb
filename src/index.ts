@@ -10,7 +10,7 @@ import HomeRouter from './home/router/HomeRouter'
 import HomeView from './home/view/HomeView'
 
 export default class Server {
-  private readonly app: Application
+  public readonly app: Application
 
   constructor(
     private readonly newsRouter: NewsRouter,
@@ -31,24 +31,22 @@ export default class Server {
     this.app.set('views', path.join(__dirname, './template'))
   }
 
+  private readonly static = (): void => {
+    this.app.use(express.static(path.join(__dirname, './public')))
+  }
+
   private readonly routes = (): void => {
     this.app.use('/', this.homeRouter.router)
     this.app.use('/news', this.newsRouter.router)
     this.app.use('/add', this.registerRouter.router)
     this.app.use('/{*any}', this.errorRouter.router)
-    
-  }
-
-  private readonly static = (): void => {
-    console.log(__dirname)
-    this.app.use(express.static(path.join(__dirname, './public')))
   }
 
   readonly start = (): void => {
     const port = 1888
     const host = 'localhost'
     this.app.listen(port, () => {
-      console.log(`Server is running on http://${host}:${port}`)
+      console.log(`Server running on http://${host}:${port}`)
     })
   }
 }
@@ -59,4 +57,9 @@ const server = new Server(
   new RegisterRouter(new RegisterView()),
   new HomeRouter(new HomeView())
 )
-server.start()
+
+if (require.main === module) {
+  server.start()
+}
+
+export const app = server.app
