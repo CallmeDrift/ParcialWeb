@@ -1,8 +1,9 @@
 import puppeteer, { Browser } from 'puppeteer'
 import { app } from '../../../src/index'
 import { AddressInfo } from 'net'
+import http from 'http'
 
-let server: any
+let server: http.Server
 let browser: Browser
 
 describe('Home E2E', () => {

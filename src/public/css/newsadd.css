@@ -3,67 +3,52 @@
   --primary: #123F8A;
   --primary-light: #387BB7;
   --secondary: #63D5E6;
-  --secondary-dark: #3B9DCC;
-  --background-light: #A7C4DA;
-  --background-lighter: #E3F4FA;
   --accent: #F6A8DC;
+  --background-gradient: linear-gradient(135deg, #A7C4DA 0%, #E3F4FA 50%, #F6A8DC 100%);
+  --text-light: #ffffff;
   --text-dark: #123F8A;
-  --text-medium: #387BB7;
-  --text-light: #FFFFFF;
 }
 
 /* === BASE === */
 body {
   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  background: linear-gradient(to bottom, var(--background-light) 70%, var(--accent));
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  background: var(--background-gradient);
+  position: relative;
+  overflow-x: hidden;
+  color: var(--text-dark);
 }
 
-/* === NAVBAR === */
-.navbar {
-  background-color: var(--primary);
-  padding: 1rem;
-  text-align: center;
-}
-
-.navbar h1 {
-  margin: 0;
-  font-size: 1.8rem;
-  color: var(--text-light);
-}
-
-.navbar .home-link {
-  text-decoration: none;
-  color: inherit;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.navbar .home-link:hover {
-  opacity: 0.8;
-}
 
 /* === FORM CONTAINER === */
 .form-container {
-  padding: 2rem;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1rem 5rem;
+  min-height: calc(100vh - 100px);
 }
 
 .form-card {
-  background: var(--background-lighter);
-  padding: 2rem;
-  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 2.5rem;
   max-width: 700px;
   width: 100%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 30px rgba(18, 63, 138, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-title {
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
   color: var(--primary);
-  font-size: 1.8rem;
   text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.6);
 }
 
 /* === FORM ELEMENTS === */
@@ -78,13 +63,15 @@ label {
   color: var(--text-dark);
 }
 
-input, textarea {
-  padding: 0.7rem;
-  border: 1px solid var(--secondary-dark);
-  border-radius: 8px;
+input,
+textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba(18, 63, 138, 0.25);
+  border-radius: 10px;
   font-size: 1rem;
   font-family: inherit;
-  background: var(--text-light);
+  background: rgba(255, 255, 255, 0.5);
+  transition: border-color 0.25s, box-shadow 0.25s;
 }
 
 input:focus, textarea:focus {

@@ -1,6 +1,6 @@
 import path from 'node:path'
 import fs from 'node:fs'
-import puppeteer from 'puppeteer'
+import puppeteer, { Browser } from 'puppeteer'
 import { AddressInfo } from 'node:net'
 
 // Import the express app exported from src/index
@@ -8,9 +8,11 @@ import { app } from '../../../src/index'
 
 const DB_PATH = path.join(__dirname, '../../../database/news.json')
 
+type NewsItem = { title: string; [key: string]: unknown }
+
 describe('Register E2E (puppeteer)', () => {
-  let server: any
-  let browser: any
+  let server: import('http').Server
+  let browser: Browser
   let originalDbContent: Buffer
 
   beforeAll(async () => {
@@ -64,11 +66,11 @@ describe('Register E2E (puppeteer)', () => {
     await page.type('#comments', 'Comentario de prueba')
 
     // Submit form via fetch from the page context to ensure the POST is sent
-  await page.evaluate(async (payload: any) => {
+    await page.evaluate(async (payload: Record<string, string>) => {
       await fetch('/news/add', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(payload as any)
+        body: new URLSearchParams(payload as Record<string, string>)
       })
     }, {
       title: uniqueTitle,
@@ -85,8 +87,8 @@ describe('Register E2E (puppeteer)', () => {
 
   // Check the database directly to avoid pagination issues in the view
   const dbRaw = fs.readFileSync(DB_PATH, 'utf-8')
-  const db = JSON.parse(dbRaw) as Array<any>
-  const found = db.find((n: any) => n.title === uniqueTitle)
+  const db = JSON.parse(dbRaw) as Array<NewsItem>
+  const found = db.find((n: NewsItem) => n.title === uniqueTitle)
   expect(found).toBeDefined()
 
     await page.close()

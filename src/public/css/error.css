@@ -1,109 +1,172 @@
-/* ================================
-   ESTILOS PARA LA PÁGINA 404
-=================================== */
-
-body {
+/* =========================
+   ESTILOS GENERALES
+========================= */
+* {
   margin: 0;
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  color: #333;
-  height: 100vh;
-  overflow-x: hidden;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, sans-serif;
 }
 
-section {
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom, #a1c4fd, #c2e9fb, #e0c3fc);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   ENCABEZADO
+========================= */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  text-align: left;
+  font-weight: bold;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* =========================
+   SECCIÓN PRINCIPAL
+========================= */
+.main {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  padding: 4rem 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+  z-index: 5;
 }
 
-.container {
-  max-width: 1100px;
+.main p{
+  color: #353535
 }
 
-h1.display-1 {
-  font-size: 6rem;
-  font-weight: 800;
-  color: #6c757d;
+.content {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 3rem 4rem;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
   animation: fadeIn 1s ease-in-out;
 }
 
-p {
-  font-size: 1.1rem;
-  color: #6c757d;
-  line-height: 1.6;
-  animation: fadeIn 1.2s ease-in-out;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.btn-secondary {
-  background-color: #6c63ff;
-  border: none;
+/* =========================
+   TEXTO
+========================= */
+.error-title {
+  font-size: 6rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.error-message {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #f0f0f0;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+/* =========================
+   BOTÓN
+========================= */
+.home-button {
+  display: inline-block;
+  background: #4facfe;
   color: #fff;
-  padding: 0.8rem 2rem;
+  padding: 0.9rem 1.8rem;
   font-size: 1rem;
-  font-weight: 500;
-  border-radius: 2rem;
-  box-shadow: 0 4px 10px rgba(108, 99, 255, 0.3);
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
   transition: all 0.3s ease;
 }
 
-.btn-secondary:hover {
-  background-color: #5848d6;
-  box-shadow: 0 6px 15px rgba(88, 72, 214, 0.4);
-  transform: translateY(-2px);
+.home-button:hover {
+  background: #00c6ff;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
-lottie-player {
+/* =========================
+   BURBUJAS DE FONDO
+========================= */
+.bubbles {
+  position: absolute;
   width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  animation: float 4s ease-in-out infinite;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  top: 0;
+  left: 0;
 }
 
-/* ================================
-   ANIMACIONES
-=================================== */
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.bubbles span {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.25);
+  bottom: -150px;
+  border-radius: 50%;
+  animation: bubble 20s infinite;
+  backdrop-filter: blur(2px);
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0);
+.bubbles span:nth-child(1) { left: 10%; animation-delay: 0s; width: 60px; height: 60px; }
+.bubbles span:nth-child(2) { left: 20%; animation-delay: 2s; }
+.bubbles span:nth-child(3) { left: 35%; animation-delay: 4s; width: 50px; height: 50px; }
+.bubbles span:nth-child(4) { left: 50%; animation-delay: 6s; width: 80px; height: 80px; }
+.bubbles span:nth-child(5) { left: 65%; animation-delay: 8s; width: 40px; height: 40px; }
+.bubbles span:nth-child(6) { left: 75%; animation-delay: 10s; width: 70px; height: 70px; }
+.bubbles span:nth-child(7) { left: 85%; animation-delay: 12s; }
+.bubbles span:nth-child(8) { left: 90%; animation-delay: 14s; width: 90px; height: 90px; }
+.bubbles span:nth-child(9) { left: 25%; animation-delay: 16s; width: 30px; height: 30px; }
+.bubbles span:nth-child(10){ left: 55%; animation-delay: 18s; width: 60px; height: 60px; }
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
   }
   50% {
-    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-110vh) scale(1.3);
+    opacity: 0;
   }
 }
 
-/* ================================
+/* =========================
    RESPONSIVE
-=================================== */
-
+========================= */
 @media (max-width: 768px) {
-  h1.display-1 {
+  .error-title {
     font-size: 4rem;
   }
 
-  p {
-    font-size: 1rem;
-  }
-
-  .btn-secondary {
-    padding: 0.7rem 1.8rem;
-  }
-
-  lottie-player {
-    max-width: 300px;
+  .content {
+    padding: 2rem;
   }
 }
