@@ -2,8 +2,6 @@ import path from 'node:path'
 import fs from 'node:fs'
 import puppeteer, { Browser } from 'puppeteer'
 import { AddressInfo } from 'node:net'
-
-// Import the express app exported from src/index
 import { app } from '../../../src/index'
 
 const DB_PATH = path.join(__dirname, '../../../database/news.json')
@@ -16,13 +14,12 @@ describe('Register E2E (puppeteer)', () => {
   let originalDbContent: Buffer
 
   beforeAll(async () => {
-    // Backup database file so tests don't leave persistent changes
+    // Backup de la bd
     originalDbContent = fs.readFileSync(DB_PATH)
 
-    // Start server on ephemeral port
+    // Inicia el server
     server = app.listen(0)
 
-    // Launch headless browser
     browser = await puppeteer.launch({
       headless: true,
       args: ['--no-sandbox', '--disable-setuid-sandbox']
@@ -30,33 +27,30 @@ describe('Register E2E (puppeteer)', () => {
   })
 
   afterAll(async () => {
-    // Close browser and server
     if (browser) await browser.close()
     if (server) server.close()
 
-    // Restore DB
+    // restaura la DB
     fs.writeFileSync(DB_PATH, originalDbContent)
   })
 
   test('should submit add-news form and be redirected to /news with new item visible', async () => {
-    // get port
     const address = server.address() as AddressInfo
     const port = address.port
     const base = `http://localhost:${port}`
 
     const page = await browser.newPage()
 
-    // Navigate to add page
+    // prueba de agregar noticia
     await page.goto(`${base}/add`, { waitUntil: 'networkidle0' })
 
     const uniqueTitle = `Prueba E2E ${Date.now()}`
 
-    // Fill form fields
     await page.type('#title', uniqueTitle)
     await page.type('#summary', 'Resumen de prueba')
     await page.type('#content', 'Contenido de prueba para la noticia')
-    await page.type('#image', 'https://example.com/image.png')
-    // set date to today (YYYY-MM-DD)
+    await page.type('#image', 'https://i.pinimg.com/736x/c0/a4/72/c0a4729fa1cc29dff6bfb04819ba37d1.jpg')
+
     const today = new Date()
     const yyyy = today.getFullYear()
     const mm = String(today.getMonth() + 1).padStart(2, '0')
@@ -65,7 +59,7 @@ describe('Register E2E (puppeteer)', () => {
     await page.type('#date', dateStr)
     await page.type('#comments', 'Comentario de prueba')
 
-    // Submit form via fetch from the page context to ensure the POST is sent
+    // fetch con puppeteer
     await page.evaluate(async (payload: Record<string, string>) => {
       await fetch('/news/add', {
         method: 'POST',
@@ -76,16 +70,16 @@ describe('Register E2E (puppeteer)', () => {
       title: uniqueTitle,
       summary: 'Resumen de prueba',
       content: 'Contenido de prueba para la noticia',
-      image: 'https://example.com/image.png',
+      image: 'https://i.pinimg.com/736x/c0/a4/72/c0a4729fa1cc29dff6bfb04819ba37d1.jpg',
       date: dateStr,
       comments: 'Comentario de prueba'
     })
 
-    // After POST, navigate to /news to trigger rendering
+    // despues del post, renderiza /news
     await page.goto(`${base}/news`, { waitUntil: 'networkidle0' })
     expect(page.url()).toContain('/news')
 
-  // Check the database directly to avoid pagination issues in the view
+  // revisamos bd para ver si se agregó la noticia
   const dbRaw = fs.readFileSync(DB_PATH, 'utf-8')
   const db = JSON.parse(dbRaw) as Array<NewsItem>
   const found = db.find((n: NewsItem) => n.title === uniqueTitle)

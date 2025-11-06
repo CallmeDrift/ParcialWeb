@@ -8,7 +8,7 @@ let browser: Browser
 
 describe('Error E2E', () => {
   beforeAll(async () => {
-    // Levanta la app en un puerto libre
+    // Levantamos la app en un puerto libre
     server = app.listen(0)
     browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] })
   }, 30000)
@@ -22,14 +22,14 @@ describe('Error E2E', () => {
     const port = (server.address() as AddressInfo).port
     const page = await browser.newPage()
 
-    // La app monta ErrorRouter en '/{*any}' y su ruta interna es '/'
+    // montamos ErrorRouter en '/{*any}'
     const url = `http://localhost:${port}/{*any}`
     const response = await page.goto(url, { waitUntil: 'domcontentloaded' })
 
-    // Comprobar status 404
+    // Comprobamos status 404
     expect(response?.status()).toBe(404)
 
-    // Comprobar contenido de la vista error
+    // Comprobamos que se muestre la ejs
     await page.waitForSelector('.error-title')
     const title = await page.$eval('.error-title', (el: Element) => el.textContent?.trim())
     expect(title).toBe('Error 404')

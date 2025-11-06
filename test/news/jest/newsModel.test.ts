@@ -52,7 +52,7 @@ describe('NewsModel', () => {
   });
 
   test('saveNews debe asignar id=1 si el archivo está vacío (NewsModel)', () => {
-    // Simular archivo vacío
+    // Simula un archivo vacío
     (fs.readFileSync as jest.Mock).mockReturnValue('[]');
     (fs.writeFileSync as jest.Mock).mockImplementation(() => {});
 

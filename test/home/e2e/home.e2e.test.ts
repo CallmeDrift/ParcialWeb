@@ -8,7 +8,7 @@ let browser: Browser
 
 describe('Home E2E', () => {
 	beforeAll(async () => {
-		// Levanta la app en un puerto libre
+		// Levantamos la app en un puerto libre
 		server = app.listen(0)
 		browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox', '--disable-setuid-sandbox'] })
 	}, 30000)
@@ -21,12 +21,12 @@ describe('Home E2E', () => {
 	test('muestra las últimas 3 noticias en el carousel', async () => {
 		const port = (server.address() as AddressInfo).port
 		const page = await browser.newPage()
-		// usar domcontentloaded para evitar esperas largas por recursos multimedia
+		// evitamos esperar por las demoras cargando imagenes
 		await page.goto(`http://localhost:${port}/`, { waitUntil: 'domcontentloaded' })
 
 		await page.waitForSelector('.carousel-item')
 		const count = await page.$$eval('.carousel-item', (els: Element[]) => els.length)
-		// HomeRouter envía las últimas 3 noticias
+		// últimas 3 noticias
 		expect(count).toBe(3)
 
 		const firstTitle = await page.$eval('.carousel-item .news-title', (el: Element) => el.textContent?.trim())

@@ -22,7 +22,9 @@ export default class NewsModel {
   searchNews(query: string): News[] {
     const allNews = this.getAllNews();
     return allNews.filter(news =>
-      news.title.toLowerCase().includes(query.toLowerCase())
+      news.title.toLowerCase().includes(query.toLowerCase()) ||
+      news.content.toLowerCase().includes(query.toLowerCase()) ||
+      news.summary.toLowerCase().includes(query.toLowerCase())
     );
   }
 

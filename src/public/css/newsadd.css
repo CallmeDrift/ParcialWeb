@@ -1,4 +1,4 @@
-/* === VARIABLES === */
+
 :root {
   --primary: #123F8A;
   --primary-light: #387BB7;
@@ -9,7 +9,6 @@
   --text-dark: #123F8A;
 }
 
-/* === BASE === */
 body {
   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
@@ -21,8 +20,6 @@ body {
   color: var(--text-dark);
 }
 
-
-/* === FORM CONTAINER === */
 .form-container {
   display: flex;
   justify-content: center;
@@ -51,7 +48,6 @@ body {
   text-shadow: 0 2px 4px rgba(255, 255, 255, 0.6);
 }
 
-/* === FORM ELEMENTS === */
 .news-form {
   display: flex;
   flex-direction: column;
@@ -79,7 +75,6 @@ input:focus, textarea:focus {
   border-color: var(--primary);
 }
 
-/* === SUBMIT BUTTON === */
 .submit-btn {
   padding: 0.8rem;
   background-color: var(--primary);

@@ -1,4 +1,3 @@
-/* === VARIABLES === */
 :root {
   --primary: #123F8A;
   --primary-light: #387BB7;
@@ -71,7 +70,7 @@ body::after {
 .bubbles span:nth-child(6) { left: 80%; width: 30px; height: 30px; animation-duration: 13s; animation-delay: 4s; }
 .bubbles span:nth-child(7) { left: 90%; width: 20px; height: 20px; animation-duration: 11s; animation-delay: 2s; }
 
-/* === NAVBAR === */
+
 .navbar {
   position: absolute;
   top: 0;

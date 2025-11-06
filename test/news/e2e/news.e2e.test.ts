@@ -30,12 +30,12 @@ describe('News E2E (Puppeteer)', () => {
 	test('carga /news, muestra tarjetas y navega a detalle', async () => {
 		await page.goto(`${baseUrl}/news`, { waitUntil: 'networkidle2' })
 
-		// Esperar al menos una tarjeta
+		// mostramos tarjetas de noticias
 		await page.waitForSelector('.news-card', { timeout: 5000 })
 		const cards = await page.$$('.news-card')
 		expect(cards.length).toBeGreaterThan(0)
 
-		// Obtener título del primer elemento y navegar al detalle
+		// detalle de la primera noticia
 		const firstTitle = await page.$eval('.news-card .news-title a', el => (el.textContent || '').trim())
 
 		await Promise.all([
