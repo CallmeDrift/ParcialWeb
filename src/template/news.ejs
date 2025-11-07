@@ -20,7 +20,7 @@
       <section class="news-grid">
         <% news.forEach(item => { %>
           <article class="news-card">
-            <img src="<%= item.image %>" alt="<%= item.title %>" class="news-image">
+            <img src="<%= item.image || '/assets/megumin.jpg' %>" alt="<%= item.title %>" class="news-image">
             <div class="news-content">
               <h2 class="news-title">
                 <a href="/news/<%= item.id %>"><%= item.title %></a>
