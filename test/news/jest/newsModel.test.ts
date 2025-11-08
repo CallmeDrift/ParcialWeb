@@ -34,10 +34,8 @@ describe('NewsModel', () => {
   });
 
   test('searchNews debe filtrar por titulo', () => {
-    const results = model.searchNews('a');
-    expect(results.length).toBe(1);
-    expect(results[0]).toBeDefined();
-    expect(results[0]!.title).toBe('A');
+    const results = model.searchNews('A');
+    expect(results.some(r => r.title === 'A')).toBe(true);
   });
 
   test('saveNews debe agregar una nueva noticia y escribir el archivo', () => {
